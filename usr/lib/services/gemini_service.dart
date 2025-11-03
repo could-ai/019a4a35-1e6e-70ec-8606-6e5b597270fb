@@ -22,7 +22,7 @@ class GeminiService {
 
 Business Idea: $idea
 
-Format the response clearly with headings.'';
+Format the response clearly with headings.''';
       final response = await _model.generateContent([Content.text(prompt)]);
       return response.text ?? 'Analysis failed.';
     } catch (e) {
@@ -38,7 +38,7 @@ Format the response clearly with headings.'';
 - Optimal posting times
 - Content ideas based on current trends
 
-Use AI to analyze internet context.'';
+Use AI to analyze internet context.''';
       final response = await _model.generateContent([Content.text(prompt)]);
       return response.text ?? 'Trend analysis failed.';
     } catch (e) {
@@ -53,7 +53,7 @@ Use AI to analyze internet context.'';
 - Content scores and SERP features
 - Recommendations to outrank them (e.g., for featured snippets, 'people also ask')
 
-Simulate Semrush/Ahrefs data.'';
+Simulate Semrush/Ahrefs data.''';
       final response = await _model.generateContent([Content.text(prompt)]);
       return response.text ?? 'Competitor analysis failed.';
     } catch (e) {

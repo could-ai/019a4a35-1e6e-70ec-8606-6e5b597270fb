@@ -91,7 +91,7 @@ class _AnalyticsDashboardScreenState extends State<AnalyticsDashboardScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 _buildStatCard('Total Content', totalContent.toString()),
-                _buildStatCard('Avg Engagement', '${avgEngagement.toFixed(1)}%'),
+                _buildStatCard('Avg Engagement', '${avgEngagement.toStringAsFixed(1)}%'),
               ],
             ),
             const SizedBox(height: 20),
